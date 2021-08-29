@@ -1,0 +1,43 @@
+.review-rating {
+    margin-top: 60px;
+}
+
+.review-grade p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    margin-left: -130px;
+}
+
+.review-img img {
+   margin-left: -360px;
+   height: 6px;
+   margin-bottom: -18px;
+   vertical-align: 25px;
+   margin-top: 10px;
+   
+}
+
+.review-rate h1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.review-rate img {
+   height: 32px;
+}
+
+.review-rate h3 {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600px;
+    line-height: 36px;
+}
+

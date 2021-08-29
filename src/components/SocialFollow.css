@@ -1,0 +1,19 @@
+.social-icon-container {
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+}
+
+.twitter-handle, .instagram-handle, .facebook-handle {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.twitter-handle{
+    color: turquoise
+}
+
+.instagram-handle {
+    color: red;
+}

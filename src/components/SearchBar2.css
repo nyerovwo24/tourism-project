@@ -1,0 +1,101 @@
+/* .search-put {
+    margin: 20px;
+    display: flexbox;
+    padding-left: 60px;
+
+} */
+
+ /* .search input {
+    background-color: white;
+    border: 0;
+    border-radius: 0px;
+    height: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    
+
+}  */
+
+/* .search-icon-put {
+    height: 60px;
+    width: 50px;
+    display: grid;
+} */
+
+/* .dataResult {
+    margin-top: -80px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+
+} */
+
+ /* .dataResult::-webkit-scrollbar {
+    display: none;
+}  */
+
+/* .dataResult .dataItem {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+} */
+
+/* .dataItem a {
+    text-decoration: none;
+
+} */
+
+/* a:hover {
+    background-color: lightgrey;
+} */
+
+/* #clearBtn {
+    cursor: pointer;
+} */
+
+/* input:focus {
+    outline: none;
+}
+
+.dataResult {
+    margin-top: -280px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.data-sult::-webkit-scrollbar {
+    display: none;
+}
+
+.dataResult .dataItem {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.dataItem P {
+    margin-left: 10px;
+
+}
+
+p {
+    text-decoration: none;
+} */
+
+/* a:hover {
+    background-color: lightgrey;
+}
+ 
+#clearBtn {
+    cursor: pointer;
+} */

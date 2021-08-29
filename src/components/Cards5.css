@@ -1,0 +1,138 @@
+.col-6 img{
+    width: 103%;
+    height: 91%;
+}
+
+input[type=text], select {
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Poppins';
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #06AED5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Poppins';
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #06AED5;;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  
+  input[type=date], select {
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Poppins';
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #06AED5;;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #06AED5;
+    margin-bottom: 35px;
+  }
+
+  input[type=people], select {
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Poppins';
+    padding: 15px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #06AED5;;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .ticket-book {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    width: 100%;
+     background-color: #06AED5;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  ::placeholder {
+    color: #06AED5;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Poppins';
+  }
+
+ .check-out .check-out-form {
+   font-size: 16px;
+ }
+
+ .ticket-book-1 {
+   padding-top: 50px;
+ }
+
+ label {
+   font-size: 20px;
+   margin-bottom: -60px;
+   color: #06AED5;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   line-height: 24px;
+   
+ }
+
+ .atm-card {
+   margin-top: 55px;
+
+ }
+
+ .atm-receipt {
+   margin-top: 45px;
+ }
+
+ .atm-phone {
+   margin-top: 45px;
+  
+ }
+
+ /* .atm-card img {
+   height: 150px;
+   width: 100%;
+ } */
+
+ /* .atm-receipt img {
+  height: 150px;
+  width: 100%;
+} */
+
+/* .atm-phone img {
+  height: 150px;
+  width: 110%;
+
+} */
+
+.we-accept {
+  margin-top: 110px;
+  color: #06AED5;
+}
+  

@@ -1,0 +1,51 @@
+:root {
+    --mainBlue: #6495ED;
+    --mainWhite: #fff;
+}
+
+.footer-row {
+    padding: 0 20px !important;
+ }
+
+ .list-unstyled li {
+     font-size: 12px;
+     width: 300px;
+     line-height: 18px;
+ }
+
+ .list-unstyled li a {
+     line-height: 30px;
+ }
+
+ .footer-socials li {
+     width: 230px !important;
+     margin-bottom: 10px;
+ }
+
+ .footer-header-text h4 {
+     margin-bottom: 15px;
+     font-weight: 600;
+     font-size: 14px;
+ }
+
+ .download-btn {
+     display: flex;
+     gap: 20px;
+ }
+
+ .download-btn img {
+     border-radius: 10px;
+     background-color: white;
+     padding: 5px 10px;
+     cursor: pointer;
+ }
+
+ .footer-bottom {
+    padding-left: 60px;
+}
+
+.text-xs-center {
+    font-size: 20px;
+}
+ 
+ 
