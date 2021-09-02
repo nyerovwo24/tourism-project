@@ -2,7 +2,7 @@ import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
 import Btn from './Btn'
-import StarRating from './StarRating';
+//import StarRating from './StarRating';
 
 
 function Cards2() {
@@ -20,7 +20,10 @@ function Cards2() {
                         location="Sapele-Agbor Road Oria Abraka"
                         path="/home"
                         />
-                        <StarRating />
+                          <div>
+                        
+                          </div>
+                          <img className="star-img-card2" src='images/Star-2.png' alt='star' />
                      </div>
                      <div className="col-4">
                            <CardItem 
@@ -30,7 +33,7 @@ function Cards2() {
                            location="Ewuru Road Off Benin-Asaba Expressway"
                            path="/home"
                            />
-                           <StarRating />
+                           <img className="star-img-card2" src='images/Star-1.png' alt='star' />
                      </div>
                      <div className="col-4">
                         <CardItem 
@@ -40,7 +43,7 @@ function Cards2() {
                         location="Koko Warri-North Local Government"
                         path="/home"
                         />
-                        <StarRating />
+                        <img className="star-img-card2" src='images/Star-2.png' alt='star' />
                      </div>
                     
                  </div>
@@ -55,7 +58,7 @@ function Cards2() {
                         location="Idumuje-Ugboko Aniocha North LGA"
                         path="/home"
                         />
-                        <StarRating />
+                        <img className="star-img-card2" src='images/Star-1.png' alt='star' />
                      </div>
                      <div className="col-4">
                            <CardItem 
@@ -65,7 +68,7 @@ function Cards2() {
                            location="Onicha-Olona Vertinary St Asaba"
                            path="/home"
                            />
-                           <StarRating />
+                           <img className="star-img-card2" src='images/Star-2.png' alt='star' />
                      </div>
                      
                      <div className="col-4">
@@ -76,7 +79,7 @@ function Cards2() {
                         location="Bomadi Bayelsa Niger Delta"
                         path="/home"
                         />
-                        <StarRating />
+                        <img className="star-img-card2" src='images/Star-2.png' alt='star' />
                      </div>
                   
                  </div>

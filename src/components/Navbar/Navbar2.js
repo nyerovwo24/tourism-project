@@ -7,7 +7,7 @@ function Navbar2() {
             <Nav className='navbar--2'>
                <NavLink to='/' exact>
                   <img src="/images/TourDelta.png" alt="TourDelta" style={{marginLeft: '-65px'}} />
-                  <h1 style={{fontFamily: 'sans-serif', fontSize: '40px'}}><strong style={{color: 'rgba(45, 53, 65, 1'}}>Tour</strong>Delta</h1>
+                  <h1 style={{fontFamily: 'Poppins', fontSize: '40px', fontWeight: '900'}}><strong style={{color: 'rgba(45, 53, 65, 1', fontWeight: '700'}}>Tour</strong>Delta</h1>
                </NavLink>
                <NavMenu>
                    <NavLink to="/destinations" activeStyle>

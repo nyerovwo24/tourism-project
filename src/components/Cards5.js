@@ -1,14 +1,32 @@
+
 import React from 'react'
 import './Cards5.css'
 
+import { userSchema } from '../Validations/UserValidation'
+
+
+
 function Cards5() {
+
+const createUser = async (event) => {
+  event.preventDefault()
+  let formData = {
+    destination: event.target[0].value,
+    checkIn: event.target[1].value,
+    checkOut: event.target[2].value,
+    people: event.target[3].value,
+    email: event.target[4].value
+  };
+  console.log(formData)
+};
+
     return (
      <div className='container'>
         <section className="row ">
            <div className="col-6">
              <div className='wrapper'>
                <div className='form-wrapper'>
-                   <form>
+                   <form onSubmit={createUser}>
                      <div className='col-12'>
                        <div className='destination'>
                          <label className='Destination'>Destination</label><br />
@@ -16,8 +34,10 @@ function Cards5() {
                             type='text' 
                             className='' 
                              placeholder='The Mongo Park House' 
-                            name='destination' 
+                            name='destination'
                             />
+                          
+                          
                        </div>
                       </div>
  
@@ -29,7 +49,7 @@ function Cards5() {
                     <input 
                     type='date' 
                     className='' 
-                    placeholder='DD/MM/YYYY' 
+                    placeholder='date' 
                     onfocus="(this.type='date')"
                     name='check-in' 
                      />
@@ -37,12 +57,13 @@ function Cards5() {
                  </div>
 
                  <div className='col-6 check-out-1'>
-                 <div className='check-out'>
-                <label className='check-out-form'>Check Out</label><br />
+                 <div className='check-out-form'>
+                <label className='check-out'>Check Out</label><br />
                 <input 
                 type='date' 
                 className='' 
-                placeholder='DD/MM/YYYY' 
+                placeholder='date' 
+                onfocus="(this.type='date')"
                 name='check-out' 
                  />
              </div>
@@ -80,7 +101,7 @@ function Cards5() {
 
                  <section className='row ticket-row'>
                   <div className='col-12 ticket-book-1'>
-                    <button className='ticket-book'>Book Ticket</button>
+                    <button className='ticket-book' type='submit'>Book Ticket</button>
                   </div>
                   </section>
               </form>

@@ -1,12 +1,19 @@
 import React from 'react'
+//import  { useEffect, useState } from 'react'
+// import {
+//    useParams
+//  } from "react-router-dom";  
 import './Review.css'
+//import axios from 'axios';
 
 function Review() {
+   
+
     return (
         <div className="container reviews">
         <section className='row review-rating'>
         <div className='col-4 review-rate'>
-           <h1>Reviews</h1>
+           <h1>{}</h1>
            <h1>4.0</h1>
            <img className="star-img" src='images/starstar.png' alt='star' />
            <h3>Based on 23 reviews</h3>

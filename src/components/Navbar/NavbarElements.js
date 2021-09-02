@@ -12,7 +12,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
-color: skyblue;
+color: rgba(47, 128, 237, 1);
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -54,13 +54,15 @@ export const NavBtn = styled.div`
 display: flex;
 align-items: center;
 margin-right: 0px;
-color: skyblue;
+color: rgba(47, 128, 237, 0.8);
+
+
 
 @media screen and (max-width: 768px) {
    display: none;
 }
 `
-  
+
 export const NavBtnLink = styled(Link)`
 border-radius: 12px;
 background: #6495ED;
@@ -73,8 +75,6 @@ outline: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
-
-
 
 `
 

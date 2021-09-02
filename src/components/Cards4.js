@@ -1,7 +1,7 @@
 import React from 'react'
 import CardItem from './CardItem';
 import './Cards.css';
-import StarRating from './StarRating';
+//import StarRating from './StarRating';
 
 function Cards4() {
     return (
@@ -18,7 +18,7 @@ function Cards4() {
                         location="Umuaja Ukwuani Local Government Area"
                         path="/home"
                         />
-                        <StarRating />
+                        <img className="star-img-card2" src='images/FullStar.png' alt='star' />
                      </div>
                      <div className="col-4">
                            <CardItem 
@@ -28,7 +28,7 @@ function Cards4() {
                            location=" Nnebisi Road Asaba"
                            path="/home"
                            />
-                           <StarRating />
+                           <img className="star-img-card2" src='images/Star-1.png' alt='star' />
                      </div>
                      <div className="col-4">
                         <CardItem 
@@ -39,7 +39,7 @@ function Cards4() {
                         path="/home"
 
                         />
-                        <StarRating />
+                        <img className="star-img-card2" src='images/FullStar.png' alt='star' />
                      </div>
                  </div>
               </div>   

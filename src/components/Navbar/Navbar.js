@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import '../Navbar/navbar2.css'
 
 function Navbar() {
     return (
@@ -7,7 +8,7 @@ function Navbar() {
             <Nav>
                <NavLink to='/' exact>
                   <img src="/images/TourDelta.png" alt="TourDelta" style={{marginLeft: '-65px'}} />
-                  <h1 style={{fontFamily: 'sans-serif', fontSize: '40px'}}><strong style={{color: 'rgba(45, 53, 65, 1'}}>Tour</strong>Delta</h1>
+                  <h1 style={{fontFamily: 'Poppins', fontSize: '40px', fontWeight: '900'}}><strong style={{color: 'rgba(45, 53, 65, 1', fontWeight: '700'}}>Tour</strong>Delta</h1>
                </NavLink>
                <Bars />
                <NavMenu>

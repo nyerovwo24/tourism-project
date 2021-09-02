@@ -17,7 +17,7 @@ export default function Cards({ locations }) {
             <div className="row card-card">
               <div>
                 <li className="cards_item">
-                  <Link className="cards_item_link">
+                  <Link className="cards_item_link" to={`/destination/${location._id}`}>
                     <figure
                       className="cards_item_pic_wrap"
                       data-category={location.name}

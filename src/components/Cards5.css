@@ -23,7 +23,7 @@ input[type=text], select {
     padding: 15px 15px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #06AED5;;
+    border: 1px solid rgba(47, 128, 237, 0.8);
     border-radius: 8px;
     box-sizing: border-box;
   }
@@ -36,7 +36,7 @@ input[type=text], select {
     padding: 15px 15px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #06AED5;;
+    border: 1px solid rgba(47, 128, 237, 0.8);
     border-radius: 8px;
     box-sizing: border-box;
     color: #06AED5;
@@ -50,7 +50,7 @@ input[type=text], select {
     padding: 15px 15px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #06AED5;;
+    border: 1px solid rgba(47, 128, 237, 0.8);
     border-radius: 8px;
     box-sizing: border-box;
   }
@@ -61,7 +61,7 @@ input[type=text], select {
     font-style: normal;
     line-height: 24px;
     width: 100%;
-     background-color: #06AED5;
+    border: 1px solid rgba(47, 128, 237, 0.8);
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -70,13 +70,13 @@ input[type=text], select {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 8px;
+    background-color: rgba(47, 128, 237, 0.8);
   }
 
   ::placeholder {
-    color: #06AED5;
+    color: rgba(47, 128, 237, 0.8);
     font-size: 16px;
     line-height: 24px;
     font-family: 'Poppins';
@@ -93,7 +93,7 @@ input[type=text], select {
  label {
    font-size: 20px;
    margin-bottom: -60px;
-   color: #06AED5;
+   color: rgba(47, 128, 237, 1);
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 600;
@@ -115,6 +115,15 @@ input[type=text], select {
   
  }
 
+ input:focus {
+  color: rgba(47, 128, 237, 0.8);
+  font-size: 16px;
+  border: 1px solid rgba(47, 128, 237, 0.8);
+  
+}
+
+ 
+
  /* .atm-card img {
    height: 150px;
    width: 100%;
@@ -132,7 +141,8 @@ input[type=text], select {
 } */
 
 .we-accept {
-  margin-top: 110px;
-  color: #06AED5;
+  margin-top: 90px;
+  color: rgba(47, 128, 237, 1);
+
 }
   
