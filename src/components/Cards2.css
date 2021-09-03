@@ -1,4 +1,8 @@
-
+.col-2 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
 
 .card-h {
     width: 100px;
@@ -15,12 +19,13 @@
 
 
 .mongopark-wrapper {
-   margin-bottom: 30px;
+   margin-bottom: -63rem;
   
 }
 
 .mongopark-wrapper img {
   width: 100%;
+  height: 50%;
 }
 
 
@@ -121,6 +126,7 @@
   height: 56px;
   color: rgba(196, 196, 196, 1);
   margin-right: 15px;
+  border-radius: 50%;
 }
 
 .ese-p {

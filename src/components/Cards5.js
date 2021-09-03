@@ -1,24 +1,43 @@
 
 import React from 'react'
 import './Cards5.css'
+import axios from 'axios'
+import  { useState } from 'react'
 
-import { userSchema } from '../Validations/UserValidation'
+
+
 
 
 
 function Cards5() {
+  const [ destination, setDestination] = useState();
+  const [ checkIn, setCheckIn] = useState();
+  const [ checkOut, setCheckOut] = useState();
+  const [ people, setPeople] = useState();
+  const [ email, setEmail] = useState();
 
-const createUser = async (event) => {
-  event.preventDefault()
-  let formData = {
-    destination: event.target[0].value,
-    checkIn: event.target[1].value,
-    checkOut: event.target[2].value,
-    people: event.target[3].value,
-    email: event.target[4].value
-  };
-  console.log(formData)
-};
+  const handleSubmit = async e => {
+    e.preventDefault();
+  const bookTicket = {destination, checkIn, checkOut, people, email}
+  console.log(bookTicket);
+  }
+  
+    axios.post('https://deltour.herokuapp.com/api/v1/destinations/book',{
+      destination,
+      checkIn,
+      checkOut,
+      people,
+      email,
+    })
+    .then((res) => {
+      console.log('bookTicket')
+    })
+    .catch(err=> {
+      console.log(err)
+    });
+  
+
+
 
     return (
      <div className='container'>
@@ -26,11 +45,11 @@ const createUser = async (event) => {
            <div className="col-6">
              <div className='wrapper'>
                <div className='form-wrapper'>
-                   <form onSubmit={createUser}>
+                   <form>
                      <div className='col-12'>
                        <div className='destination'>
                          <label className='Destination'>Destination</label><br />
-                           <input 
+                           <input onChange={e => setDestination(e.target.value)}
                             type='text' 
                             className='' 
                              placeholder='The Mongo Park House' 
@@ -46,7 +65,7 @@ const createUser = async (event) => {
                    <div className='col-6 check-in-1'>
                      <div className='check-in-form'>
                     <label className='check-in'>Check In</label><br />
-                    <input 
+                    <input onChange={e => setCheckIn(e.target.value)}
                     type='date' 
                     className='' 
                     placeholder='date' 
@@ -59,7 +78,7 @@ const createUser = async (event) => {
                  <div className='col-6 check-out-1'>
                  <div className='check-out-form'>
                 <label className='check-out'>Check Out</label><br />
-                <input 
+                <input onChange={e => setCheckOut(e.target.value)}
                 type='date' 
                 className='' 
                 placeholder='date' 
@@ -76,7 +95,7 @@ const createUser = async (event) => {
                    <div className='col-6 resident-1'>
                      <div className='resident'>
                     <label className='resident-form'>Resident</label><br />
-                    <input 
+                    <input onChange={e => setPeople(e.target.value)}
                     type='people' 
                     className='' 
                     placeholder='_Adult_Children' 
@@ -88,7 +107,7 @@ const createUser = async (event) => {
                  <div className='col-6 email-1'>
                  <div className='e-mail'>
                 <label className='e-mail-form'>E-Mail</label><br />
-                <input 
+                <input onChange={e => setEmail(e.target.value)} 
                 type='email' 
                 className='' 
                 placeholder='email address' 
@@ -101,7 +120,7 @@ const createUser = async (event) => {
 
                  <section className='row ticket-row'>
                   <div className='col-12 ticket-book-1'>
-                    <button className='ticket-book' type='submit'>Book Ticket</button>
+                    <button onClick={handleSubmit} className='ticket-book' type='submit'>Book Ticket</button>
                   </div>
                   </section>
               </form>

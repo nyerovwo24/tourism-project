@@ -6,6 +6,7 @@ import './Cards.css';
 function Cards4() {
     return (
         <>
+        
         <section className="cards">
            <h3 className="heading_trend">More Places to Explore</h3>
               <div className="container card-wrap">
@@ -44,6 +45,7 @@ function Cards4() {
                  </div>
               </div>   
          </section>
+         
                   
               
           </>    
