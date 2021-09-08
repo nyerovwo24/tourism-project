@@ -19,6 +19,7 @@ text-decoration: none;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
+font-size: 17px;
 
 &.active {
    color: rgba(47, 128, 237, 1);

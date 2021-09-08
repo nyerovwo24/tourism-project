@@ -29,7 +29,7 @@ const Button = styled.button`
 export default function Btn() {
     return (
         <div>
-         <Button>View All</Button>
+         <a href='/destination'> <Button>View All</Button></a>
         </div>
     )
 }

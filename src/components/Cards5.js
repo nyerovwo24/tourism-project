@@ -1,41 +1,39 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Cards5.css'
 import axios from 'axios'
-import  { useState } from 'react'
-
-
-
 
 
 
 function Cards5() {
-  const [ destination, setDestination] = useState();
-  const [ checkIn, setCheckIn] = useState();
-  const [ checkOut, setCheckOut] = useState();
-  const [ people, setPeople] = useState();
-  const [ email, setEmail] = useState();
+  const [ destination, setDestination] = useState("");
+  const [ checkIn, setCheckIn] = useState("");
+  const [ checkOut, setCheckOut] = useState("");
+  const [ people, setPeople] = useState(0);
+  const [ email, setEmail] = useState("");
 
-  const handleSubmit = async e => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  const bookTicket = {destination, checkIn, checkOut, people, email}
-  console.log(bookTicket);
-  }
-  
-    axios.post('https://deltour.herokuapp.com/api/v1/destinations/book',{
-      destination,
-      checkIn,
-      checkOut,
-      people,
-      email,
-    })
-    .then((res) => {
-      console.log('bookTicket')
-    })
-    .catch(err=> {
-      console.log(err)
-    });
-  
+
+      
+      let { data } = await axios.post(
+        `https://deltour.herokuapp.com/api/v1/destinations/book`, {
+          destination,
+          checkIn,
+          checkOut,
+          people: Number(people),
+          email
+        }         
+      );
+      console.log(data.data);
+      setDestination(data.data);
+      };
+
+    useEffect(() => {
+      console.log('call');
+      setDestination();
+    }, []);
 
 
 
@@ -45,7 +43,7 @@ function Cards5() {
            <div className="col-6">
              <div className='wrapper'>
                <div className='form-wrapper'>
-                   <form>
+                   <form onSubmit={handleSubmit} >
                      <div className='col-12'>
                        <div className='destination'>
                          <label className='Destination'>Destination</label><br />
@@ -96,7 +94,7 @@ function Cards5() {
                      <div className='resident'>
                     <label className='resident-form'>Resident</label><br />
                     <input onChange={e => setPeople(e.target.value)}
-                    type='people' 
+                    type='number' 
                     className='' 
                     placeholder='_Adult_Children' 
                     name='destination' 
@@ -120,7 +118,7 @@ function Cards5() {
 
                  <section className='row ticket-row'>
                   <div className='col-12 ticket-book-1'>
-                    <button onClick={handleSubmit} className='ticket-book' type='submit'>Book Ticket</button>
+                    <button className='ticket-book' type='submit'>Book Ticket</button>
                   </div>
                   </section>
               </form>

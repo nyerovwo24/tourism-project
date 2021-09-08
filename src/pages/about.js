@@ -15,7 +15,7 @@ const About = () => {
   const [locations, setLocations] = useState('');
   let { id } = useParams();
   const getLocations = async () => {
-    let { data } = await axios.get(
+    let { data } = await axios.post(
       `https://deltour.herokuapp.com/api/v1/destinations/one/${id}`          
     );
     console.log(data.data);

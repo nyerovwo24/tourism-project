@@ -12,6 +12,9 @@ function Navbar() {
                </NavLink>
                <Bars />
                <NavMenu>
+               <NavLink to="/about" activeStyle>
+                    Destination
+                   </NavLink>
               
                    <NavLink to="/about" activeStyle>
                     About
@@ -24,7 +27,7 @@ function Navbar() {
                    </NavLink>
                </NavMenu>
                <NavBtn  style={{marginTop: '5px', borderRadius: '16px', color: 'rgba(47, 128, 237, 1)', marginLeft: '60px'}}>
-               <NavBtnLink style={{fontSize: '16px', fontWeight: '700', fontStyle: 'normal', fontFamily: 'Poppins', lineHeight: '20px', color: 'rgba(255, 255, 255, 1)', paddingLeft: '70px', paddingRight: '70px'}} to='book-ticket'>Book Ticket</NavBtnLink>
+               <NavBtnLink style={{fontSize: '16px', fontWeight: '700', fontStyle: 'normal', fontFamily: 'Poppins', lineHeight: '20px', color: 'rgba(255, 255, 255, 1)', paddingLeft: '70px', paddingRight: '70px'}} to='about'>Book Ticket</NavBtnLink>
              </NavBtn>
             </Nav>
         </>

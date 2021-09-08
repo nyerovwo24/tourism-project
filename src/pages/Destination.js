@@ -15,16 +15,16 @@ import axios from 'axios';
 const Destinations = () => {
     const [locations, setLocations] = useState('');
     let { id } = useParams();
-    const getLocations = async () => {
-      let { data } = await axios.get(
-        `https://deltour.herokuapp.com/api/v1/destinations/one/${id}`          
-      );
-      console.log(data.data);
-      setLocations(data.data);
-    };
 
     useEffect(() => {
-      console.log('call');
+      const getLocations = async () => {
+        let { data } = await axios.get(
+          `https://deltour.herokuapp.com/api/v1/destinations/one/${id}`          
+        );
+        console.log(data.data);
+        setLocations(data.data);
+      };
+  
       getLocations();
     }, [id]);
 
@@ -34,6 +34,8 @@ const Destinations = () => {
             <Navbar2 locations={locations}/>   
            <Cards3 locations={locations}/>
            <Cards4 locations={locations}/>
+
+          
     </React.Fragment>
     )
 }

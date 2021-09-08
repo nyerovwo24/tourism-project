@@ -6,6 +6,7 @@ import HeroSection from "../HeroSection";
 import Navbar from "../components/Navbar/Navbar";
 import axios from "axios";
 
+
 const Home = () => {
   const [locations, setLocations] = useState([]);
   useEffect(() => {

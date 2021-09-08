@@ -91,7 +91,7 @@ function Cards3({ locations }) {
       )}
       <section>
         <div>
-          <Review locations={locations}/>
+          <Review />
         </div>
       </section>
 
