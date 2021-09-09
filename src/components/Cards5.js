@@ -118,7 +118,7 @@ function Cards5() {
 
                  <section className='row ticket-row'>
                   <div className='col-12 ticket-book-1'>
-                    <button className='ticket-book' type='submit'>Book Ticket</button>
+                    <button className='ticket-book' type='submit' to='about'>Book Ticket</button>
                   </div>
                   </section>
               </form>

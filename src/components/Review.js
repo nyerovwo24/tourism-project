@@ -24,11 +24,11 @@ function Review() {
         <section className='row review-rating'>
         {reviews.map((reviews) => (
         <div className='col-4 review-rate'>
-        <img src={reviews.avatar[0]} alt='' />
+        <img src={reviews.avatar[0]} alt='' style={{height: "15%",  marginBottom: '10px'}} />
          <h5>{reviews.date}</h5>
          <h3>{reviews.name}</h3>
-         <p>{reviews.review}</p>
-         <p>{reviews.star}</p>
+         <p style={{color: 'rgba(0, 0, 0, 0.5', FontSize: '0px', fontStyle: 'Poppins'}}>{reviews.review}</p>
+         <p style={{ marginBottom: '-330px'}}>{reviews.star}</p>
          
           
          

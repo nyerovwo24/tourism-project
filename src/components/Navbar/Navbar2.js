@@ -10,14 +10,12 @@ function Navbar2() {
                   <h1 style={{fontFamily: 'Poppins', fontSize: '40px', fontWeight: '900'}}><strong style={{color: 'rgba(45, 53, 65, 1', fontWeight: '700'}}>Tour</strong>Delta</h1>
                </NavLink>
                <NavMenu>
-                   <NavLink to="/destinations" activeStyle>
-                   Destinations
-                   </NavLink>
+                   
                    <NavLink to="/about" activeStyle>
-                    About
+                    Destination
                    </NavLink>
                    <NavLink to="/blog" activeStyle>
-                    Blog
+                    About
                    </NavLink>
                    <NavLink to="/contact" activeStyle>
                     Contact

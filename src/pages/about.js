@@ -25,6 +25,7 @@ const About = () => {
   useEffect(() => {
     console.log('call');
     getLocations();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
     return (

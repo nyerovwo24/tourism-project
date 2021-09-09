@@ -12,15 +12,12 @@ function Navbar() {
                </NavLink>
                <Bars />
                <NavMenu>
-               <NavLink to="/about" activeStyle>
-                    Destination
-                   </NavLink>
               
                    <NavLink to="/about" activeStyle>
-                    About
+                    Destination
                    </NavLink>
                    <NavLink to="/blog" activeStyle>
-                    Blog
+                    About
                    </NavLink>
                    <NavLink to="/contact" activeStyle>
                     Contact
