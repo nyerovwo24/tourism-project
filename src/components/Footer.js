@@ -13,14 +13,16 @@ function Footer() {
                <div className='container-fluid footer-wrapper'>
                  <div className='row footer-row'>
                      <div className='col-sm-4 footer-header-text'>
-                        <h4>About TourDelta</h4>
+                        <h4 style={{marginLeft: '18px'}}>About TourDelta</h4>
                           <ul className='list-unstyled'>
-                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure esse dolorum repellendus, perferendis sed quibusdam vitae sequi ab ratione obcaecati, reiciendis dolores labore hic tenetur a quisquam error aperiam harum vel sunt. Earum totam accusantium architecto laboriosam excepturi asperiores eius nesciunt et doloremque error dolor, dolorum quibusdam quis aliquid.</li>
+                             <li>Tour Delta is a State own tour operator offering tourists amazing African safari vacation trips and one-on-one experience in Delta state with Resort locations and historic mountain, as well as African most appreciated sites.
+                             - We specialize in Great Historic sites and Resort tours in Delta State that can be custom designed to suit your desire and requirement for an unequaled experience in The Big Heart of Nigeria, Delta State.
+                             </li>
                           </ul>
                      </div>
 
                      <div className='col-sm-2 offset-2 footer-header-text'>
-                     <h4>Quick Links</h4>
+                     <h4 style={{marginLeft: '10px'}}>Quick Links</h4>
                        <ul className='list-unstyled'>
                           <li><a href='/destinations'>Destinations</a></li>
                           <li><a href='/about'>About</a></li>
@@ -30,7 +32,7 @@ function Footer() {
                   </div>
 
                   <div className='col-sm-3 offset-1 footer-header-text'>
-                        <h4>Our Social Handles</h4>
+                        <h4 style={{marginLeft: '18px'}}>Our Social Handles</h4>
                           <ul className='list-unstyled footer-socials'>
                              <li>Follow us on social handles for live update on our activities</li>
                             <SocialFollow />
