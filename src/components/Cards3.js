@@ -69,7 +69,7 @@ function Cards3({ locations }) {
                         paddingLeft: "80px",
                         paddingRight: "80px",
                       }}
-                      to="book-ticket"
+                      to="/about"
                     >
                       Book Ticket
                     </NavBtnLink>

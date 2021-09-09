@@ -13,7 +13,7 @@ function Navbar() {
                <Bars />
                <NavMenu>
               
-                   <NavLink to="/about" activeStyle>
+                   <NavLink to="/" activeStyle>
                     Destination
                    </NavLink>
                    <NavLink to="/blog" activeStyle>
