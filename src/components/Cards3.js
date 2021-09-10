@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards2.css";
 import StarRating from "./StarRating";
 import MapMarker from "./MapMarker";
-import Review from "./Review";
+//import Review from "./Review";
 import { NavBtn, NavBtnLink } from "./Navbar/NavbarElements";
 //import '../components/Search.css'
 
@@ -91,7 +91,7 @@ function Cards3({ locations }) {
       )}
       <section>
         <div>
-          <Review />
+        
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import React from "react";
 import "./Cards.css";
 import Btn from "./Btn";
 import Cards2 from "./Cards2";
-import StarRating from "./StarRating";
+//import StarRating from "./StarRating";
 import { Link } from "react-router-dom";
 import MapMarker from "./MapMarker";
 
@@ -33,10 +33,11 @@ export default function Cards({ locations }) {
                       <p className="cards_item_location">
                         <MapMarker /> {location.name}
                       </p>
+                      <img className="star-img-card2" src='images/Star-1.png' alt='star' style={{marginLeft: '-2px'}} />
                     </div>
                   </Link>
                 </li>
-                <StarRating />
+                
               </div>
             </div>
           </div>
